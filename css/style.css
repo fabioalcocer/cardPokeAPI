@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.bubble {
+  position: absolute;
+}
+
+.bubble__top {
+  top: -550px;
+  left: -300px;
+}
+
+.bubble__bottom {
+  bottom: -650px;
+  right: -250px;
+}
+
+.card {
+  width: 325px;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgba(46, 45, 45, 0.534);
+}
+
+.card__header {
+  width: 100%;
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+.card__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.body__img {
+  width: 200px;
+  height: 200px;
+  margin-top: calc(-100px - 5px);
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background-color: #fff;
+}
+
+.text__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 1.2rem 0 0.2rem 0;
+  color: #2d3248;
+  text-transform: capitalize;
+}
+
+.text__title span {
+  font-weight: 400;
+  color: #696969;
+  padding-left: 5px;
+}
+
+.text__exp {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #969696;
+  margin-top: 9px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__stats {
+  margin: 1.5rem 0;
+}
+
+.footer__stats--num {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #2d3248;
+  margin: 0.5rem 0;
+}
+
+.footer__stats--text {
+  color: #969696;
+  font-weight: 400;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .bubble {
+    position: absolute;
+    width: 80%;
+  }
+
+  .bubble__top {
+    width: 300px;
+    left: -100px;
+    top: -110px;
+  }
+
+  .bubble__bottom {
+    left: 150px;
+    bottom: -90px;
+  }
+}

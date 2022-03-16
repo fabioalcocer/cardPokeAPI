@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PokeApi Card</title>
+  </head>
+  <body>
+    <img src="./images/bg-pattern-top.svg" class="bubble bubble__top" />
+    <img src="./images/bg-pattern-bottom.svg" class="bubble bubble__bottom" />
+
+    <main class="main">
+      
+    </main>
+
+    <template id="templateCard">
+      <section class="card">
+        <img
+          src="./images/bg-pattern-card.svg"
+          class="card__header"
+        />
+  
+        <section class="card__body">
+          <img
+            src="./images/image.jpg"
+            alt=""
+            class="body__img"
+          />
+          <p class="text__title">
+            Victor Crest
+            <span class="text__hp">26</span>
+          </p>
+          <p class="text__exp">London</p>
+        </section>
+  
+        <footer class="card__footer">
+          <div class="footer__stats">
+            <p class="footer__stats--num ataque">80K</p>
+            <p class="footer__stats--text">Ataque</p>
+          </div>
+          <div class="footer__stats">
+            <p class="footer__stats--num ataque__esp">803K</p>
+            <p class="footer__stats--text">Ataque Especial</p>
+          </div>
+          <div class="footer__stats">
+            <p class="footer__stats--num defensa">1.4K</p>
+            <p class="footer__stats--text">Defensa</p>
+          </div>
+        </footer>
+      </section>
+    </template>
+
+  </body>
+  <script src="./js/app.js"></script>
+</html>
