@@ -9,7 +9,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot.png)
+![](./images/img.png)
 
 ### Links
 
